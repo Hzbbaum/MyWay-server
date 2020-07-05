@@ -25,7 +25,7 @@ router.post("/token", (req, res) => {
   jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET, (err, payload) => {
     if (err) return res.sendStatus(403);
     const accessToken = generateAccessToken(payload);
-    res.json({ accessToken });
+    res.Status(200).json({ accessToken, success:true, message:"token refershed" });
   });
 });
 
@@ -106,7 +106,7 @@ router.delete("/logout", async (req, res) => {
   finalres = await queryMachine(query_enum.LOGOUT, req.body.uname);
   if (finalres.results) {
     refreshTokens = refreshTokens.filter((token) => token !== req.body.token);
-    res.sendStatus(204);
+    res.Status(204).json({success:true, message:"logged out"});
   }
 });
 
