@@ -47,7 +47,7 @@ Any route with access set to 'user' or 'admin' must have an authurazation token 
 |/adminget|Get|none|none|admin|`{ finalres }`|
 |/|Put|`{ vacation }`|none|admin|`{ finalres }`|
 |/|Post|`{ vacation }` - no vaction_id|none|admin|`{ finalres }`|
-|/|Delete|` { vacation }`|none|admin|`{ finalres' }` |
+|/|Delete|` { vacation }`|none|admin|`{ finalres }` |
 ## About
 
 This endpoint was created by Hillel Buchsbaum. Feel free to ask me for more details, or for any suggestions for improvement!
