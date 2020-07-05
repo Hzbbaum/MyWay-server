@@ -1,0 +1,18 @@
+/**
+ * a pseudo enum to help keep things tidy
+ */
+const querySelector = {
+    // user queries
+    REGISTER_QUERY:"REGISTER_QUERY",
+    LOGIN_QUERY:"LOGIN_QUERY",
+    LOGOUT_BY_USER_ID:"LOGOUT_BY_USER_ID",
+    GET_VACATIONS_BY_USER_ID:"GET_VACATIONS_BY_USER_ID",
+    FOLLOW_VACATION_BY_USER_ID:"FOLLOW_VACATION_BY_USER_ID",
+    // admin queries
+    GET_ALL_VACTIONS:"GET_ALL_VACATIONS",
+    DELETE_VACATIONS_BY_ID:"DELETE_VACATIONS_BY_ID",
+    UPDATE_VACATION_BY_ID:"UPDATE_VACATION_BY_ID",
+    CREATE_VACATION:"CREATE_VACATION"
+}
+
+module.exports = querySelector
