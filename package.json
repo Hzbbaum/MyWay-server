@@ -4,7 +4,8 @@
   "description": "node.js server for myway flight deal tracker",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "deployDb": "node ./db/setupDb.js"
   },
   "repository": {
     "type": "git",
